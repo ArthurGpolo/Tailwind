@@ -10,7 +10,7 @@ export default function Home() {
         <button className="bg-white w-45 rounded p-2 font-bold">Start a Free Trial</button>
       </div>
 
-       <img className="w-140 h-120" src="https://static-web.grammarly.com/1e6ajr2k4140/5R5dKxUhBQPygoWW6u2LjV/679b7d6476301b0871ff69b1e0a3ef52/Image__55_.png?w=936" />
+       <img className="w-140 h-120" src="https://static-web.grammarly.com/1e6ajr2k4140/59dAQsO2FoFD26cqNig4CJ/f54e0752c2274f5aa654afc1161f5d36/Frame_31613244.png?w=1280" />
 
        </div>
     </>
