@@ -28,3 +28,8 @@ body {
 @theme{
   --color-botao: #303ac8;
 }
+
+@theme{
+  --color-botao2: #148bfa; 
+  --color-hover: #afafaf;
+}
