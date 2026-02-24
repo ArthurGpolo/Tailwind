@@ -1,4 +1,3 @@
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -19,7 +18,9 @@ export default function Home() {
 
           {/* BOTÃO */}
           <button className="bg-white w-full sm:w-52 rounded p-3 font-bold hover:bg-gray-200 transition">
+            <a href="/cardTaillwind">
             Start a Free Trial
+            </a>
           </button>
 
         </div>
