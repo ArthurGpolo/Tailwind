@@ -25,25 +25,48 @@ export default function Card() {
 
     return (
         <>
-            <div className="container sm:grid sm:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-5">
-                {produtos && produtos.map((produto) => (
-                    <div key={produto.id} className="flex hover:-translate-y-1 ease-linear duration-100">
-                            <div className="card md:flex p-2 border border-gray-300 rounded-md shadow-sm">
-                                <img src={produto.images[0]} className="card-img-top h-70"/>
 
-                                <div className="card-body flex flex-col gap-3 justify-between">
-                                    <h6 className="card-title font-bold text-2xl">{produto.title}</h6>
-                                    <p className="card-text text-sm">
-                                        {produto.description}
-                                    </p>
-                                    <p className="bg-gray-300 border border-gray-900 rounded-sm p-1 w-fit"><strong>{produto.tags[0]}</strong></p>
-                                    <button className=" bg-botao2 hover:bg-hover focus:outline-2 focus:outline-offset-2 focus:outline-hover active:bg-hover rounded-sm p-2">
-                                        <a href="#" className="text-white  font-bold">
-                                            Ver detalhes
-                                        </a>
-                                    </button>
-                                </div>
+            <div className="container grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-5">
+                {produtos && produtos.map((produto) => (
+                    <div
+                        key={produto.id}
+                        className="hover:-translate-y-1 transition-transform duration-150"
+                    >
+                        <div className="flex flex-col md:flex-row border border-gray-300 rounded-md shadow-sm overflow-hidden bg-white h-full">
+
+                            {/* IMAGEM */}
+                            <div className="w-auto md:w-1/2 md:h-auto">
+                                <img
+                                    src={produto.images[0]}
+                                    alt={produto.title}
+                                    className="w-full h-full object-cover"
+                                />
                             </div>
+
+                            {/* CONTEÚDO */}
+                            <div className="flex flex-col justify-between p-2 flex-1 gap-3">
+
+                                <h6 className="font-bold text-xl md:text-2xl">
+                                    {produto.title}
+                                </h6>
+
+                                <p className="text-sm text-gray-600">
+                                    {produto.description}
+                                </p>
+
+
+
+                                <span className="bg-gray-200 border border-gray-900 rounded-sm px-2 py-1 w-fit text-sm">
+                                    <strong>{produto.tags[0]}</strong>
+                                </span>
+
+
+                                <button className="bg-botao2 hover:bg-hover transition-colors text-white font-bold rounded-sm p-2">
+                                    Ver detalhes
+                                </button>
+                            </div>
+
+                        </div>
                     </div>
                 ))}
             </div>
