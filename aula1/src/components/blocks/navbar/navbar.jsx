@@ -65,7 +65,7 @@ export default function Navbar() {
                     </div>
 
                     {/* LADO DIREITO */}
-                    <div className="hidden lg:flex items-center gap-10">
+                    <div className="hidden xl:flex items-center gap-10">
 
                         <button className="font-extrabold text-sm">
                             My Grammarly
@@ -78,7 +78,7 @@ export default function Navbar() {
                     </div>
 
                     {/* BOTÃO MOBILE */}
-                    <button className="lg:hidden">
+                    <button className="xl:hidden">
                         ☰
                     </button>
 
@@ -86,7 +86,7 @@ export default function Navbar() {
 
 
                 {/* NAVBAR SECUNDÁRIA */}
-                <div className="bg-gray-200 flex items-center px-12 gap-12">
+                <div className="bg-gray-200 md:flex items-center px-12 gap-12 hidden">
 
                     <h1 className="font-bold text-xl">
                             Business
