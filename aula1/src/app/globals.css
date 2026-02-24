@@ -32,4 +32,5 @@ body {
 @theme{
   --color-botao2: #148bfa; 
   --color-hover: #afafaf;
+  --color-fundo: #f7f8fc;
 }

@@ -32,7 +32,7 @@ export default function Card() {
                         key={produto.id}
                         className="hover:-translate-y-1 transition-transform duration-150"
                     >
-                        <div className="flex flex-col md:flex-row border border-gray-300 rounded-md shadow-sm overflow-hidden bg-white h-full">
+                        <div className="flex flex-col md:flex-row border border-gray-300 rounded-md shadow-lg overflow-hidden bg-white h-full">
 
                             {/* IMAGEM */}
                             <div className="w-auto md:w-1/2 md:h-auto">
